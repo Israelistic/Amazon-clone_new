@@ -1,9 +1,12 @@
-<h1>index page</h1>
+<h1><span>&#10017;</span> <span>&#36;</span> will Shuck you for cheap <span>&#36;</span> <span>&#10017;</span> </h1>
+
+<h4><%= link_to 'Add New Product', new_product_url  %></h4>
+
+<div class= 'index'>
 
 <% @products.each do |product| %>
-<p><%= product.name %></p>
-
-<p><%= product.desciption  %></p>
-
-<p><%= product.price_in_cents %></p>
+<%= link_to(image_tag(product.url), product_url(product))%>
+<%= product.price_in_cents %>
 <% end %>
+
+</div>

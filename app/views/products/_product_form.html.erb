@@ -1,0 +1,24 @@
+<%= form_for product do |f| %>
+<p>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Enter product name" %></p>
+
+<p>
+    <%= f.label :desciption %>
+    <%= f.text_field :desciption, placeholder: "Enter product desciption"%></p>
+
+<p>
+    <%= f.label :price_in_cents %>
+    <%= f.text_field :price_in_cents, placeholder: "Enter product price" %>
+</p>
+<p>
+    <%= f.label :url %>
+    <%= f.text_field :url, placeholder: "Enter product price"%>
+</p>
+
+
+<p>
+    <%= f.submit%>
+</p>
+
+<% end %>
